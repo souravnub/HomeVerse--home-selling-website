@@ -25,6 +25,14 @@
     opacity: 0;
   }
 }
+@keyframes nav-move-in {
+  0% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -198,6 +206,10 @@ button {
   transform: translateX(0) scale(1) !important;
 }
 
+.nav-move-in {
+  animation: nav-move-in 250ms ease-in forwards;
+}
+
 .side-bar-menu {
   position: fixed;
   left: 0;
@@ -296,9 +308,17 @@ html {
   align-items: center;
 }
 
+.header-nav-container {
+  position: relative;
+}
+
 .nav-container {
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
   padding-block: 2rem;
   background-color: hsl(0deg, 0%, 100%);
+  z-index: 9;
 }
 .nav-container nav {
   display: flex;

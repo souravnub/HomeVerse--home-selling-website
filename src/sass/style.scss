@@ -34,6 +34,9 @@
 .show-side-bar {
     transform: translateX(0) scale(1) !important;
 }
+.nav-move-in {
+    animation: nav-move-in 250ms ease-in forwards;
+}
 
 .side-bar-menu {
     position: fixed;
@@ -151,9 +154,18 @@ html {
     }
 }
 
+.header-nav-container {
+    position: relative;
+}
+
 .nav-container {
+    position: absolute;
+    bottom: 0;
+    inset-inline: 0;
     padding-block: 2rem;
     background-color: $white;
+
+    z-index: 9;
 
     nav {
         display: flex;

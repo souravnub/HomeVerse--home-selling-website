@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeVerse</title>
+    <title>HomeVerse - Find Your Dream Home</title>
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./javascript/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
 </head>
 
 <body>
@@ -62,37 +63,37 @@
 
         <ul>
             <li>
-                <a href="#">
+                <a href="#home">
                     home
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#about">
                     about
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#services">
                     services
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#property">
                     property
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#blog">
                     blog
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#contact">
                     contact
 
                 </a>
@@ -100,82 +101,87 @@
         </ul>
     </nav>
 
-    <section class="container top-nav-container">
+    <div class="header-nav-container">
 
-        <div class="top-nav sub-container">
-            <a class="top-nav__mail-info hover-orange">
-                <ion-icon name="mail-outline" class="icon"></ion-icon>
-                <span>info@homeverse.com</span>
-            </a>
+        <section class="container top-nav-container" id="top-nav-container">
 
-            <a class="top-nav__location-info hover-orange">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <span>15/A, Nest Tower, NYC</span>
-            </a>
+            <div class="top-nav sub-container">
+                <a class="top-nav__mail-info hover-orange">
+                    <ion-icon name="mail-outline" class="icon"></ion-icon>
+                    <span>info@homeverse.com</span>
+                </a>
 
-            <div class="top-nav__main-link-container">
+                <a class="top-nav__location-info hover-orange">
+                    <ion-icon name="location-outline" class="icon"></ion-icon>
+                    <span>15/A, Nest Tower, NYC</span>
+                </a>
 
-                <ul class="top-nav__link-container">
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-pinterest"></ion-icon>
-                        </a>
-                    </li>
+                <div class="top-nav__main-link-container">
+
+                    <ul class="top-nav__link-container">
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn">
+                        add listing
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="container nav-container" id="main-nav-container">
+
+
+            <nav class="sub-container">
+                <img src="./assets/images/logo.png" alt=Homeverse logo>
+
+                <ul id="nav-ul-container">
+                    <li><a href="#home" class="hover-orange">Home</a></li>
+                    <li><a href="#about" class="hover-orange">About</a></li>
+                    <li><a href="#services" class="hover-orange">Services</a></li>
+                    <li><a href="#property" class="hover-orange">Property</a></li>
+                    <li><a href="#blog" class="hover-orange">Blog</a></li>
+                    <li><a href="#contact" class="hover-orange">Contact</a></li>
                 </ul>
-                <button class="btn">
-                    add listing
-                </button>
-            </div>
-        </div>
 
-    </section>
+                <div class="nav-links-container">
+                    <button aria-label="Search" class="white-btn">
+                        <ion-icon name="search-outline" class="icon"></ion-icon>
 
-    <section class="container nav-container">
-
-        <nav class="sub-container">
-            <img src="./assets/images/logo.png" alt=Homeverse logo>
-
-            <ul id="nav-ul-container">
-                <li><a href="#home" class="hover-orange">Home</a></li>
-                <li><a href="#about" class="hover-orange">About</a></li>
-                <li><a href="#services" class="hover-orange">Services</a></li>
-                <li><a href="#property" class="hover-orange">Property</a></li>
-                <li><a href="#blog" class="hover-orange">Blog</a></li>
-                <li><a href="#contact" class="hover-orange">Contact</a></li>
-            </ul>
-
-            <div class="nav-links-container">
-                <button aria-label="Search" class="white-btn">
-                    <ion-icon name="search-outline" class="icon"></ion-icon>
-
-                </button>
-                <button area-label='Profile' class="white-btn">
-                    <ion-icon name="person-outline" class="icon"></ion-icon>
-                </button>
-                <button area-label="Cart" class="white-btn">
-                    <ion-icon name="cart-outline" class="icon"></ion-icon>
-                </button>
-                <button area-label="toogle navigation" class="white-btn" id="hammenu-toggle-btn">
-                    <ion-icon name="menu-outline" class="icon"></ion-icon>
-                </button>
-            </div>
-        </nav>
-    </section>
+                    </button>
+                    <button area-label='Profile' class="white-btn">
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </button>
+                    <button area-label="Cart" class="white-btn">
+                        <ion-icon name="cart-outline" class="icon"></ion-icon>
+                    </button>
+                    <button area-label="toogle navigation" class="white-btn" id="hammenu-toggle-btn">
+                        <ion-icon name="menu-outline" class="icon"></ion-icon>
+                    </button>
+                </div>
+            </nav>
+        </section>
+    </div>
 
     <section class="main-hero-container container" id="home">
         <div class="hero-container sub-container">
@@ -841,7 +847,7 @@
     <footer class="main-footer-container container">
         <div class="footer-sub-container sub-container">
 
-            <div class="footer-sub-container__contact-form-container">
+            <div class="footer-sub-container__contact-form-container" id="contact">
                 <div class="footer-sub-container__contact-form-container__info-container">
                     <div class="heading">
                         Looking for a dream home?
