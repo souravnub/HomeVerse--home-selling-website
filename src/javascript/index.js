@@ -21,7 +21,6 @@ window.addEventListener("scroll", () => {
             inset-inline: 0;
             height:max-content;
             box-shadow:  rgb(78 73 181 / 19%) 0px 16px 32px;
-            transform:translateY(0);
         `;
         main_nav_container.classList.add("nav-move-in");
     } else {
@@ -29,7 +28,6 @@ window.addEventListener("scroll", () => {
             position: absolute;
             bottom: 0;
             inset-inline: 0;
-            padding-block: 2rem;
         `;
         main_nav_container.classList.remove("nav-move-in");
     }
