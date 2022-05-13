@@ -1,0 +1,117 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: $white;
+}
+::-webkit-scrollbar-thumb {
+    background: $cadet;
+}
+
+.btn {
+    font-size: $fs-3;
+    font-weight: $fw-500;
+
+    text-transform: capitalize;
+    color: $white;
+
+    padding: 0.5rem 1rem;
+    background-color: $orange-soda;
+
+    &:hover {
+        background-color: darken($orange-soda, 8%);
+    }
+}
+
+.white-btn {
+    padding: 0.3rem 0.7rem;
+    font-size: $fs-5;
+    background-color: $white;
+    box-shadow: $shadow-2;
+}
+
+.side-line {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: $black;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.faded {
+    color: $cadet;
+}
+
+.transition-btn {
+    width: max-content;
+    height: max-content;
+    padding: 1rem 2rem;
+    color: var(--text-main, $white);
+    font-size: $fs-4;
+    background: linear-gradient(
+        270deg,
+        var(--main-clr, $orange-soda) 50%,
+        var(--sec-clr, $white) 50%
+    );
+    background-position: center right;
+    background-size: 200%;
+    border: 1.5px solid var(--main-clr, $orange-soda);
+
+    &:hover {
+        color: var(--text-sec, $black);
+        background-position: center left;
+        border: 1.5px solid $black;
+    }
+}
+
+.capsule {
+    background-color: $misty-rose;
+    color: $orange-soda;
+    font-size: $fs-3;
+    font-weight: $fw-700;
+    padding: 0.3rem 1.5rem;
+    border-radius: 100vh;
+
+    max-width: max-content;
+}
+
+.big-heading {
+    font-size: $fs-7;
+    font-family: $ff-poppins;
+    font-weight: $fw-700;
+
+    line-height: 1;
+}
+
+.circle-icon {
+    background-color: $misty-rose;
+    border-radius: 50%;
+    padding: 0.8rem;
+    font-size: $fs-4;
+    color: $orange-soda;
+}
+
+.info-side-orange {
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: $seashell;
+    display: grid;
+    place-items: center;
+
+    &::before {
+        content: "";
+
+        background-color: $orange-soda;
+        width: 3px;
+        height: 100%;
+
+        position: absolute;
+        left: 0;
+    }
+}

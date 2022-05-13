@@ -1,0 +1,28 @@
+@keyframes body-overlay-fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes body-overlay-fade-out {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
