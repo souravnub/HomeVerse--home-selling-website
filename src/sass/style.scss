@@ -991,7 +991,7 @@ html {
 // 840px
 @include mq(52.5rem) {
     #bottom-nav {
-        z-index: 99999;
+        z-index: 9;
         background-color: $white;
         box-shadow: $shadow-2;
         display: block;

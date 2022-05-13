@@ -997,7 +997,7 @@ html {
 }
 @media screen and (max-width: 52.5rem) {
   #bottom-nav {
-    z-index: 99999;
+    z-index: 9;
     background-color: hsl(0deg, 0%, 100%);
     box-shadow: 0 16px 32px hsla(188deg, 63%, 7%, 0.1);
     display: block;
